@@ -11,7 +11,7 @@
 	<groupId>fr.delmaire.universite</groupId>
 	<artifactId>universite-back-agnes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>universite-back</name>
+	<name>universite-back-agnes</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
