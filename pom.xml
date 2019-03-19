@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.delmaire.universite</groupId>
-	<artifactId>universite-back</artifactId>
+	<artifactId>universite-back-agnes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>universite-back</name>
 	<description>Demo project for Spring Boot</description>
