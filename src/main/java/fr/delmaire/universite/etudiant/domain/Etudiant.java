@@ -14,6 +14,7 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import fr.delmaire.universite.note.domain.Note;
@@ -49,7 +50,7 @@ public class Etudiant implements Serializable{
 	private String photo;
 	
 	@OneToMany(mappedBy="etudiant")
-	//etudiant du bean note
+	@JsonIgnore
 	private List<Note> notes;
 
 	public List<Note> getNotes() {

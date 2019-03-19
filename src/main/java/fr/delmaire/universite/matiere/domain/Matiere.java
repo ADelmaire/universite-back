@@ -13,6 +13,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import fr.delmaire.universite.enseignant.domain.Enseignant;
@@ -43,8 +44,7 @@ public class Matiere implements Serializable{
 	private Enseignant enseignant;
 
 	@OneToMany(mappedBy="matiere")
-	//matiere du bean note
-	// lien bidirectionnel
+	@JsonIgnore
 	private List<Note> notes;
 	
 	public List<Note> getNotes() {

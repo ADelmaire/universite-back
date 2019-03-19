@@ -15,6 +15,7 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import fr.delmaire.universite.matiere.domain.Matiere;
@@ -57,6 +58,7 @@ public class Enseignant implements Serializable{
 	private String photo;
 	
 	@OneToMany(mappedBy="enseignant")
+	@JsonIgnore
 	private List<Matiere>matieres;
 
 

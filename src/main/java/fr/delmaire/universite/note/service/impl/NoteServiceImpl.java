@@ -23,12 +23,6 @@ public class NoteServiceImpl implements INoteService{
 	}
 
 	@Override
-	public Note save(Note note) {
-		Note n = noteRepository.save(note);
-		return n;
-	}
-
-	@Override
 	public Note findOne(Integer idEtudiant, Integer idMatiere) {
 		NotePK npk = new NotePK();
 		npk.setEtudiant(idEtudiant);
@@ -36,5 +30,4 @@ public class NoteServiceImpl implements INoteService{
 		Note n = noteRepository.getOne(npk);
 		return n;
 	}
-
 }
