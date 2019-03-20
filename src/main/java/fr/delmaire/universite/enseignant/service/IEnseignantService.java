@@ -15,4 +15,6 @@ public interface IEnseignantService {
 	public Enseignant sauvegarder (Enseignant enseignant);
 	
 	public Enseignant modifier (Enseignant enseignant);
+	
+	public List<Enseignant> getEnseignants (String chaine);
 }

@@ -60,4 +60,10 @@ public class EnseignantServiceImpl implements IEnseignantService{
 		return ens;
 	}
 
+	@Override
+	public List<Enseignant> getEnseignants(String chaine) {
+		List<Enseignant> liste = enseignantRepository.findEnseignantByNomContains(chaine);
+		return liste;
+	}
+
 }
